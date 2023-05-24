@@ -1,8 +1,7 @@
 package foo.bar
 
-import com.javiersc.kotlin.compiler.playground.annotations.Playground
+import com.javiersc.kotlin.compiler.playground.annotations.log
 
-@Playground
-fun greetings(): <!PLAYGROUND_ERROR!>String<!> {
-    return "Hi"
+fun greetings() {
+    log("hello")
 }

@@ -1,6 +1,8 @@
 package com.javiersc.kotlin.compiler.playground.services
 
 import com.javiersc.kotlin.compiler.playground.FirPlaygroundExtensionRegistrar
+import com.javiersc.kotlin.compiler.playground.IrPlaygroundExtension
+import org.jetbrains.kotlin.backend.common.extensions.IrGenerationExtension
 import org.jetbrains.kotlin.compiler.plugin.CompilerPluginRegistrar
 import org.jetbrains.kotlin.config.CompilerConfiguration
 import org.jetbrains.kotlin.fir.extensions.FirExtensionRegistrarAdapter
@@ -17,5 +19,6 @@ class ExtensionRegistrarConfigurator(
         configuration: CompilerConfiguration
     ) {
         FirExtensionRegistrarAdapter.registerExtension(FirPlaygroundExtensionRegistrar())
+        IrGenerationExtension.registerExtension(IrPlaygroundExtension())
     }
 }

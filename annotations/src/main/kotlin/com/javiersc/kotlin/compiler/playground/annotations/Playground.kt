@@ -13,9 +13,11 @@ package com.javiersc.kotlin.compiler.playground.annotations
     AnnotationTarget.PROPERTY_GETTER,
     AnnotationTarget.PROPERTY_SETTER,
     AnnotationTarget.TYPE,
-    AnnotationTarget.EXPRESSION,
     AnnotationTarget.FILE,
     AnnotationTarget.TYPEALIAS
 )
-@Retention(AnnotationRetention.SOURCE)
+@Retention(AnnotationRetention.BINARY)
 annotation class Playground
+
+@Playground
+inline fun log(message: String): Unit = TODO()

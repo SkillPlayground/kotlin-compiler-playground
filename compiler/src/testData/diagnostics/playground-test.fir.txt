@@ -1,6 +1,6 @@
 FILE: playground-test.kt
     package foo.bar
 
-    @R|com/javiersc/kotlin/compiler/playground/annotations/Playground|() public final fun greetings(): R|kotlin/String| {
-        ^greetings String(Hi)
+    public final fun greetings(): R|kotlin/Unit| {
+        R|com/javiersc/kotlin/compiler/playground/annotations/log|(String(hello))
     }

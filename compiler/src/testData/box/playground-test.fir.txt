@@ -1,0 +1,19 @@
+FILE: playground-test.kt
+    package foo.bar
+
+    public final fun box(): R|kotlin/String| {
+        lval x: R|kotlin/String| = R|foo/bar/greetings|()
+        ^box when () {
+            ==(R|<local>/x|, String(a)) ->  {
+                String(OK)
+            }
+            else ->  {
+                String(Fail)
+            }
+        }
+
+    }
+    public final fun greetings(): R|kotlin/String| {
+        R|com/javiersc/kotlin/compiler/playground/annotations/log|(String(hello))
+        ^greetings String(a)
+    }
