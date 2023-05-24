@@ -1,0 +1,19 @@
+[versions]
+kotlin = "1.9.0-Beta"
+
+[libraries]
+kotlin-annotationsJvm = { module = "org.jetbrains.kotlin:kotlin-annotations-jvm", version.ref = "kotlin" }
+kotlin-compiler = { module = "org.jetbrains.kotlin:kotlin-compiler", version.ref = "kotlin" }
+kotlin-compilerEmbeddable = { module = "org.jetbrains.kotlin:kotlin-compiler-embeddable", version.ref = "kotlin" }
+kotlin-compilerInternalTestFramework = { module = "org.jetbrains.kotlin:kotlin-compiler-internal-test-framework", version.ref = "kotlin" }
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+
+junit-bom = { module = "org.junit:junit-bom", version = "5.9.2" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
+junit-platform-commons = { module = "org.junit.platform:junit-platform-commons" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+junit-platform-runner = { module = "org.junit.platform:junit-platform-runner" }
+junit-platform-suiteApi = { module = "org.junit.platform:junit-platform-suite-api" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
